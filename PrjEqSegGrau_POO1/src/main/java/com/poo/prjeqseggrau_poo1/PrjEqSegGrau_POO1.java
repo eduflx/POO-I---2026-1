@@ -23,11 +23,15 @@ public class PrjEqSegGrau_POO1 {
         System.out.println("C: " + de.getC());
         
         CalcularEqSeqGrau esg = new CalcularEqSeqGrau();
-        DadosSaida ds = esg.delta(de);
+        /*DadosSaida ds = esg.delta(de);
         ds = esg.x1L(de);
         ds = esg.x2L(de);
         ds = esg.xV(de);
         ds = esg.yV(de);
+        */
+        
+        DadosSaida ds = new DadosSaida();
+        CalcularEqSeqGrau2 esg2 = new CalcularEqSeqGrau2();
         
         System.out.println("Delta: " + ds.getDelta());
         System.out.println("X': " + ds.getX1L());
